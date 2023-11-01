@@ -50,7 +50,7 @@ a{
 ul{
     list-style: none;
 }
-imag{
+img{
     max-width: var(--percent100);
     vertical-align: middle;
 
@@ -72,4 +72,177 @@ h1{
     font-size: calc(1.3em + 1vm)
     font-weight: var(var(--fw8));
     line-height:1;
+
 }
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 1.2em;
+    font-weight: var(--fw7);
+}
+h4 {
+    font-size: 1em;
+    font-size: var(--fw6);
+}
+.container {
+ max-width: 1280px;
+ margin: 0 auto;
+ padding: 00.938;
+}
+.column  {
+    margin-left: -0.938em;
+    margin-right: -0..938em;
+}
+.column .row {
+    padding: 0.0938em;
+}
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap ;
+}
+.flexcenter {
+    display: flex ;
+    flex-wrap: wrap;
+}
+.flexitem {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}
+.flexcol {
+    display: flex;
+    flex-direction: column ;
+    gap: 1em;
+}
+
+.main-links a:hover{
+    color: var(--secondary-color);
+}
+.second-links a:hover{
+    color: var(--light-text-color);
+}
+.icon-small,.icon-large {
+    display: flex;
+    align-items: center;
+    padding: 0 0.25em;
+    font-weight: normal;
+}
+
+.icon-large {
+    font-size: 1.75em;
+    padding: 0.075em 0 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header li > a {
+    display:flex;
+    position: relative;
+    line-height: inherit;
+}
+
+
+
+/*HEADER TOP */
+/*--------------------------------------- */
+.header-top .wrapper {
+    font-size: var(--font-small);
+    font-weight: var(--fw3) ;
+    
+}
+
+
+
+
+
+
+@media screen and (min-width: 992px){
+    .container{
+        padding: 0 2em;
+    }
+}
+
