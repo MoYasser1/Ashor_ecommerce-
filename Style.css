@@ -177,7 +177,6 @@ h4 {
     font-size: var(--font-small);
     padding: 0.9em 2em;
     width: fit-content;
-
     height: auto;
     border-radius: 2em;
     transform: var(--terms-background-color);
@@ -185,14 +184,14 @@ h4 {
 .primary.button:hover{
     background-color: var(--dark-color);
 }
-.secondary-button{
-    background-color: var(--secondary-dark-color);
-    color: var(--whit-color);
-}
 
 .secondary-button:hover{
     background-color:var(--light-bg-color) ;
     color: var(--secondary-dark-color);
+}
+.secondary-button{
+    background-color: var(--dark-color);
+    color: var(--whit-color);
 }
 .light-button {
     background-color: var(--light-bg-color);
@@ -206,12 +205,15 @@ h4 {
     font-size: var(--font-small);
     display: flex;
     gap: 1em;
-    transform: var(--terms-color);
+    transform: var(--terns-color);
 }
 
 
 
-
+.mini-text{
+    font-size: var(--font-smaller);
+    color: var(--light-bg-color);
+}
 
 
 
@@ -407,14 +409,80 @@ nav.fly-item{
 
 
 
+.header-main{
+    background-color: var(--secondary-color);
+    padding: 1.5em 0;
+    margin-bottom: 2em ;
+}
+.dpt-cat{
+    position: relative;
+    z-index: 10;
+}
+.dpt-cat .dpt-head{
+position: relative;
+width: 300px;
+padding: 0.75em 1.5em;
+background-color: var(--primary-color);
+border-radius: 7px 7px 0 0 ;
+color: var(--whit-color);
+margin-bottom: -2.15em;
+
+}
+.dpt-cat .dpt-head .mini-text{
+    color: var(--light-bg-color);
+
+}
+.dpt-cat .dpt-trigger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.3em;
+    height: 60px;
+    width: 60px;
+}
 
 
 
-
-
-
-
-
+.header-main .right{
+    float: 1;
+}
+form{
+    position: relative;
+}
+form.search input{
+    line-height: 3.25em;
+    padding: 0 7em 0 4.5em;
+    border: 0;
+    outline: 0;
+    width: var(--percent100);
+    border-radius: 7px;
+    font-size: 0.9em;
+    font-size: 0.9em;
+    font-weight: var(--fw3);
+}
+form.seach :where(span.button){
+    position: absolute ;
+    top: 0;
+    padding: 0.55em 1.5em;
+    font-size: 1.em;
+    color: var(--light-text-color);
+    height: var(--percent100) ;
+}
+form.search button {
+    right: 0;
+    border: 0;
+    outline: 0;
+    font-size: 0.875em;
+    font-weight: var(--fw6);
+    background-color: var(--primary-color);
+    color: var(--whit-color);
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    transition: var(--terms-background);
+}
+form.search button:hover {
+    background-color: var(--dark-color);
+}
 
 
 
@@ -674,6 +742,10 @@ nav.fly-item{
         background-color: var(--light-bg-color);
         box-shadow: rgb(0 0 0 / 20%)  0 30px 20px -30px;
         z-index: 100;
+        display: none ;
+    }
+    nav li.has-child:hover .mega{
+        display: block;
     }
     nav .mega .wrapper{
         display: flex;
@@ -735,3 +807,24 @@ margin-top: 1em;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-main .right {
+    max-width: 600px;
+    margin-left: auto ;
+}
